@@ -1,6 +1,6 @@
 ---
 - name: Build and Push Docker Image to Docker Hub
-  hosts: docker_server
+  hosts: localhost
   become: true
 
   vars:
@@ -8,7 +8,7 @@
     dockerhub_password: "Butt9797.14"
     image_name: "tomcatimage"
     image_tag: "v1"
-    dockerfile_path: "/home/ec2-user/"
+    dockerfile_path: "/home/ec2-user/var/lib/jenkins/workspace/Dev/"
 
   tasks:
 
