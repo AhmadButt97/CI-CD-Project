@@ -1,0 +1,33 @@
+---
+- name: Build and Push Docker Image to Docker Hub
+  hosts: docker_server
+  become: true
+
+  vars:
+    dockerhub_username: "ahmadbutt97"
+    dockerhub_password: "Butt9797.14"
+    image_name: "tomcatimage"
+    image_tag: "v1"
+    dockerfile_path: "/home/ec2-user/"
+
+  tasks:
+
+    - name: Login to Docker Hub
+      community.docker.docker_login:
+        username: "{{ dockerhub_username }}"
+        password: "{{ dockerhub_password }}"
+
+    - name: Build Docker image from Dockerfile directory
+      community.docker.docker_image:
+        name: "{{ dockerhub_username }}/{{ image_name }}"
+        tag: "{{ image_tag }}"
+        source: build
+        build:
+          path: "{{ dockerfile_path }}"
+
+    - name: Push Docker image to Docker Hub
+      community.docker.docker_image:
+        name: "{{ dockerhub_username }}/{{ image_name }}"
+        tag: "{{ image_tag }}"
+        push: true
+        source: local
