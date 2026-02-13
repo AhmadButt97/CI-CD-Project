@@ -8,7 +8,7 @@
     dockerhub_password: "Butt9797.14"
     image_name: "tomcatimage"
     image_tag: "v1"
-    dockerfile_path: "/home/ec2-user/var/lib/jenkins/workspace/Dev/"
+    dockerfile_path: "/var/lib/jenkins/workspace/Dev/"
 
   tasks:
 
