@@ -1,3 +1,5 @@
+![Banner](project/1.png)
+
  🚀 Complete End-to-End CI/CD DevOps Project on AWS (Java Tomcat + Kubernetes)
 
 📌 Project Overview
@@ -81,19 +83,36 @@ Prerequisites
   * Ansible
   * Kubernetes (kubeadm, kubelet, kubectl)
  Basic Steps
+![Banner](project/1.png)
 
 bash
 # Clone repository
 git clone https://github.com/AhmadButt97/CI-CD-Project.git
 
-# Run Jenkins pipeline
-# (configured inside Jenkins UI)
+## ⚙️ Jenkins Pipeline Execution
+
+<p align="center">
+  <img src="project/2.PNG" width="90%">
+</p>
+
+---
+
+## ☸️ Kubernetes Deployment & Running Pods
+
+<p align="center">
+  <img src="project/4.PNG" width="90%">
+</p>
 
 # Or run Ansible manually
 ansible-playbook playbook.yml
 ansible-playbook k8s-deploy.yml
 
 
+## ☸️ FUll tomcat App
+
+<p align="center">
+  <img src="project/3.PNG" width="90%">
+</p>
  📚 Key Learning Outcomes
 
 * Built a real CI/CD pipeline from scratch
@@ -118,7 +137,7 @@ ansible-playbook k8s-deploy.yml
 
 
 * GitHub: [https://github.com/AhmadButt97](https://github.com/AhmadButt97)
-* LinkedIn: 
+* LinkedIn: www.linkedin.com/in/ahmad-butt-199912346
 
 ---
 
