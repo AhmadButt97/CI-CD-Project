@@ -1,5 +1,5 @@
 - name: Deploy Tomcat to Kubernetes server
-  hosts: kubernetes
+  hosts: Docker-Host
   become: false
 
   tasks:
