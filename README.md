@@ -83,7 +83,7 @@ Prerequisites
   * Ansible
   * Kubernetes (kubeadm, kubelet, kubectl)
  Basic Steps
-![Banner](project/1.png)
+
 
 bash
 # Clone repository
