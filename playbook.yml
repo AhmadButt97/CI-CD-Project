@@ -4,8 +4,8 @@
   become: true
 
   vars:
-    dockerhub_username: "ahmadbutt97"
-    dockerhub_password: "Butt9797.14"
+    dockerhub_username: "username"
+    dockerhub_password: "password"
     image_name: "tomcatimage"
     image_tag: "v1"
     dockerfile_path: "/var/lib/jenkins/workspace/Dev/"
