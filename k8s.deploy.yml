@@ -5,7 +5,7 @@
   tasks:
     - name: Copy deployment file to Kubernetes server
       copy:
-        src: tomcat-app.yml
+        src: /var/lib/jenkins/workspace/Dev/tomcat-app.yml
         dest: /home/ec2-user/tomcat-app.yml
 
     - name: Apply Kubernetes deployment
